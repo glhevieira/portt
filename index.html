@@ -1,120 +1,96 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Guilherme Vieira — Portfolio</title>
-  <!-- J'utilise le fichier CSS que tu as uploadé. -->
-  <link rel="stylesheet" href="style.css">
-
-</head>
+    <meta charset="utf-8">
+    <title>QCM - Plateforme d'autoformation</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand">Guilherme Vieira</div>
-        <ul>
-          <li><a href="#apropos">À propos</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#experience">Expérience</a></li>
-          
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+
+<div class="container">
+
+    <div class="header-bloc">
+        <p class="bts-sio">BTS SIO Lycée Parc de Vilgénis</p>
     </div>
-  </header>
 
-  <main class="container">
-    <section class="hero" id="apropos">
-      <div class="avatar" aria-hidden="true">GV</div>
-      <div>
-        <h1>Vieira Abreu Guilherme</h1>
-        <p style="margin:6px 0 12px">Étudiant en Informatique — Je crée des interfaces web et des applications côté serveur avec une appétence pour les bases de données et la logique métier. Objectif : obtenir le BTS SIO et consolider des expériences réelles via des projets et contributions open‑source.</p>
-        <div style="display:flex;gap:12px;align-items:center">
-          <a href="#contact" style="background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600">Me contacter</a>
-          <a href="https://github.com/glhevieira" target="_blank" rel="noopener">Voir mon GitHub</a>
+    <p class="intro-qcm">Questionnaire sous forme de QCM. Les questions peuvent comporter une ou plusieurs bonnes réponses.</p>
+
+    <form id="qcm">
+
+        <div class="question-bloc">
+            <p class="question-title">Question 1: <span class="question-text">Quel langage sert à structurer une page web ?</span></p>
+            <label><input type="radio" name="q1" value="HTML"> HTML</label>
+            <label><input type="radio" name="q1" value="CSS"> CSS</label>
         </div>
-      </div>
-    </section>
 
-    <section class="card" id="competences" style="margin-bottom:20px">
-      <h2>Compétences</h2>
-      <div class="skills" style="margin-top:12px">
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">PHP</span>
-        <span class="skill">SQL</span>
-      </div>
-    </section>
-
-    <section class="grid" id="projets" style="margin-top:20px; grid-template-columns:1fr 1fr; gap:20px">
-      <article class="card">
-        <h3>Projets (TP)</h3>
-        <div class="grid" style="margin-top:16px">
-          <a class="card" href="TP1" target="_blank"><h4>TP1</h4><p>HTML / CSS</p></a>
-          <a class="card" href="TP2" target="_blank"><h4>TP2</h4><p>HTML / CSS</p></a>
-          <a class="card" href="tp/TP3.html" target="_blank"><h4>TP3</h4><p>HTML / CSS</p></a>
-          <a class="card" href="https://glhevieira.github.io/prt/TP4.html" target="_blank"><h4>TP4</h4><p>HTML / CSS</p></a>
-          <a class="card" href="tp/TP5.html" target="_blank"><h4>TP5</h4><p>HTML / CSS</p></a>
-          <a class="card" href="https://glhevieira.github.io/prt/TP6.html" target="_blank"><h4>TP6</h4><p>HTML / CSS</p></a>
-          <a class="card" href="tp7.1/index.html" target="_blank"><h4>TP7</h4><p>HTML / CSS</p></a>
-          <a class="card" href="tp/TP8.html" target="_blank"><h4>TP8</h4><p>HTML / CSS</p></a>
-          <a class="card" href="tp/TP9.html" target="_blank"><h4>TP9</h4><p>JavaScript</p></a>
-          <a class="card" href="tp/TP10.html" target="_blank"><h4>TP10</h4><p>JavaScript</p></a>
-          <a class="card" href="tp/TP11.html" target="_blank"><h4>TP11</h4><p>JavaScript</p></a>
-          <a class="card" href="tp/TP12.html" target="_blank"><h4>TP12</h4><p>JavaScript</p></a>
-          <a class="card" href="tp/TP13.html" target="_blank"><h4>TP13</h4><p>JavaScript</p></a>
-          <a class="card" href="tp/TP14.html" target="_blank"><h4>TP14</h4><p>JavaScript</p></a>
-          <a class="card" href="tp/TP16.html" target="_blank"><h4>TP16</h4><p>SQL</p></a>
+        <div class="question-bloc">
+            <p class="question-title">Question 2: <span class="question-text">Quels langages sont utilisés côté client ? (choix multiples)</span></p>
+            <label><input type="checkbox" name="q2" value="HTML"> HTML</label>
+            <label><input type="checkbox" name="q2" value="JS"> JavaScript</label>
+            <label><input type="checkbox" name="q2" value="PHP"> PHP</label>
         </div>
-      </article>
 
-      <article class="card" id="missions">
-        <h3>Missions</h3>
-        <div class="grid" style="margin-top:16px">
-          <a class="card" href="tp/mission2.html" target="_blank"><h4>Mission 2</h4><p>CV Professionnel</p></a>
-          <a class="card" href="tp/mission3.html" target="_blank"><h4>Mission 3</h4><p>Projet Web</p></a>
-          <a class="card" href="tp/mission4.html" target="_blank"><h4>Mission 4</h4><p>Dossier Thématique</p></a>
-          <a class="card" href="https://glhevieira.github.io/prt/mission5.html" target="_blank"><h4>Mission 5</h4><p>Projet Avancé</p></a>
-          <a class="card" href="tp/mission6.html" target="_blank"><h4>Mission 6</h4><p>Mini-Application</p></a>
+        <div class="question-bloc">
+            <p class="question-title">Question 3: <span class="question-text">Quel langage permet de styliser une page web ?</span></p>
+            <label><input type="radio" name="q3" value="CSS"> CSS</label>
+            <label><input type="radio" name="q3" value="HTML"> HTML</label>
         </div>
-      </article>
-    </section>
 
-    
+        <div class="question-bloc">
+            <p class="question-title">Question 4: <span class="question-text">Quel langage permet d'ajouter des interactions ?</span></p>
+            <label><input type="radio" name="q4" value="JS"> JavaScript</label>
+            <label><input type="radio" name="q4" value="CSS"> CSS</label>
+        </div>
 
-    <section class="card" id="certifications" style="margin-top:20px">
-      <h2>Certifications</h2>
-      
-       <div class="grid" style="margin-top:16px">
+        <div class="question-bloc">
+            <p class="question-title">Question 5: <span class="question-text">Quels logiciels sont des navigateurs web ? (choix multiples)</span></p>
+            <label><input type="checkbox" name="q5" value="Chrome"> Google Chrome</label>
+            <label><input type="checkbox" name="q5" value="Firefox"> Mozilla Firefox</label>
+            <label><input type="checkbox" name="q5" value="Word"> Microsoft Word</label>
+        </div>
 
-       </divclass> <a class="card" href="tp/certif/Capture d’écran 2025-11-05 203558.png" target="_blank"><h4>Certif</h4><p>ANSSI</p></a>
-       </divclass> <a class="card" href="tp/certif/modulk1.png" target="_blank"><h4>Certif</h4><p>MOOC CNIL RGPD MODULE 1</p></a>
-      </divclass> <a class="card" href="tp/certif/2.png" target="_blank"><h4>Certif</h4><p>MOOC CNIL RGPD MODULE 2</p></a>
-       </divclass><a class="card" href="tp/certif/3.png" target="_blank"><h4>Certif</h4><p>MOOC CNIL RGPD MODULE 3</p></a>
-      </divclass> <a class="card" href="tp/certif/4.png" target="_blank"><h4>Certif</h4><p>MOOC CNIL RGPD MODULE 4</p></a>
-       </divclass><a class="card" href="tp/certif/5.png" target="_blank"><h4>Certif</h4><p>MOOC CNIL RGPD MODULE 5</p></a>
-       </divclass><a class="card" href="tp/certif/6.png" target="_blank"><h4>Certif</h4><p>MOOC CNIL RGPD MODULE 6</p></a>
-       </divclass><a class="card" href="tp/mooc cnil rgpd/mooccnil.html" target="_blank"><h4>Certif</h4><p>MOOC CNIL RGPD MODULE recap</p></a>
+        <div class="question-bloc">
+            <p class="question-title">Question 6: <span class="question-text">Que signifie « CSS » ?</span></p>
+            <label><input type="radio" name="q6" value="C"> Cascading Style Sheets</label>
+            <label><input type="radio" name="q6" value="F"> Computer Style System</label>
+        </div>
 
-      </div>
+        <div class="question-bloc">
+            <p class="question-title">Question 7: <span class="question-text">Quel langage est exécuté côté serveur ?</span></p>
+            <label><input type="radio" name="q7" value="PHP"> PHP</label>
+            <label><input type="radio" name="q7" value="JS"> JavaScript</label>
+        </div>
 
-    </section>
+        <div class="question-bloc">
+            <p class="question-title">Question 8: <span class="question-text">Quelle balise permet d’insérer une image ?</span></p>
+            <label><input type="radio" name="q8" value="img"> &lt;img&gt;</label>
+            <label><input type="radio" name="q8" value="image"> &lt;image&gt;</label>
+        </div>
 
-    <section class="card" id="contact" style="margin-top:20px">
-      <h2>Contact</h2>
-      <p>Mail : <a href="mailto:glhevieira@gmail.com">glhevieira@gmail.com</a></p>
-      <p>GitHub : <a href="https://github.com/glhevieira" target="_blank">github.com/glhevieira</a></p>
-    
-  </main>
+        <div class="question-bloc">
+            <p class="question-title">Question 9: <span class="question-text">Que permet Git ?</span></p>
+            <label><input type="radio" name="q9" value="Version"> Gestion de version</label>
+            <label><input type="radio" name="q9" value="Jeu"> Lancer des jeux</label>
+        </div>
 
-  <footer>
-    <div class="container">
-      <small> Guilherme Vieira — Portfolio </small>
-    </div>
-  </footer>
+        <div class="question-bloc">
+            <p class="question-title">Question 10: <span class="question-text">Quels sont des systèmes d’exploitation ? (choix multiple)</span></p>
+            <label><input type="checkbox" name="q10" value="Windows"> Windows</label>
+            <label><input type="checkbox" name="q10" value="Linux"> Linux</label>
+            <label><input type="checkbox" name="q10" value="Excel"> Excel</label>
+        </div>
+
+        <div class="btns">
+            <button type="button" onclick="testqcm()">Correction</button>
+            <button type="button" onclick="ouvrirCorrige()">Corrigé</button>
+            <button type="button" onclick="document.getElementById('qcm').reset()">Effacer</button>
+        </div>
+
+        <div id="resultat"></div>
+
+    </form>
+</div>
+
+<script src="Q.js"></script>
 </body>
 </html>
